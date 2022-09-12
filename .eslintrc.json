@@ -1,0 +1,56 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true,
+        "node": true
+    },
+    "extends": [
+        "prettier",
+        "prettier/react"
+    ],
+    "parser": "babel-eslint",
+    "plugins": [
+        "prettier"
+    ],
+    "ignorePatterns": [
+        "config/*",
+        "node_modules/*",
+        "scripts/*"
+    ],
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ],
+        "react/prop-types": "off",
+        "lines-around-comment": [
+            "error",
+            {
+                "beforeBlockComment": false,
+                "afterBlockComment": false,
+                "beforeLineComment": false,
+                "afterLineComment": false,
+                "allowBlockStart": true,
+                "allowBlockEnd": true,
+                "allowObjectStart": true,
+                "allowObjectEnd": true,
+                "allowArrayStart": true,
+                "allowArrayEnd": true
+            }
+        ],
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "no-prototype-builtins": "off"
+    }
+}
